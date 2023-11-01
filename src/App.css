@@ -1,0 +1,232 @@
+:root {
+  --blair-red1-color: rgb(186, 34, 34);
+  --blair-red2-color: #990000;
+  --blair-white1-color: #EEEEEE;
+  --blair-white2-color: #FFFFFF;
+  --dark-blue1-color: rgb(25, 33, 82);
+  --dark-blue2-color: rgb(25, 60, 102);
+  --med-blue1-color: #3ab4cc;;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header .banner {
+  width: 100%;
+  height: 30vh;
+  background-image: url("/header-school-blair.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+footer {
+  /* border: green 4px solid; */
+  width: 100%;
+  margin: 1rem 0 2rem;
+  padding-bottom: 1rem;
+}
+
+.bg {
+  background-image: url('/Japanese-Pattern-1.jpg');
+  background-color: var(--dark-blue2-color);
+  background-blend-mode:luminosity;
+  background-size: 150%;
+  background-repeat: repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.75;
+  width: 100vw;
+  height:100vh;
+}
+
+.title {
+  color: aliceblue;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60vw;
+  margin: 1rem auto 1rem;
+}
+
+.title h4 {
+  padding-top: 1rem;
+}
+
+.v-stripe {
+  width: 60vw;
+  height: 100vh;
+  position: absolute;
+  bottom: 0;
+  left: 20vw;
+  background-color: var(--blair-red2-color);
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, .8) 0 0 10px;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.main-content {
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.main-content img {
+  width: 100%;
+}
+
+.contact-box {
+  width: 60vw;
+  margin: 1rem auto 1rem;
+  color: aliceblue;
+  font-size: 0.8rem;
+  line-height: 0.9rem;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.call-to-action-modal {
+  color: aliceblue;
+  text-align: center;
+  width: 80%;
+  height: 180px;
+  margin: 0.5rem auto 0.5rem;
+  padding: 0.5rem 0 0.5rem;
+  background-color: var(--blair-red2-color);
+  position: fixed;
+  top: 27vh;
+  opacity: 1;
+  box-shadow:rgba(0, 0, 0, .5) 5px 5px 10px;
+  border-radius: 5px;
+}
+
+.call-to-action-bg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(50, 50, 50, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+}
+
+
+.call-info {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0;
+}
+
+.call-info p {
+  padding: 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 920px;
+  padding-bottom: 2em;
+  margin: 0.25rem auto 1rem;
+  background:var(--blair-white2-color);
+  border-radius: 1rem;
+  box-shadow: 0 3px rgba(0, 0, 0, .1);
+  overflow: hidden;
+  border: var(--blair-white1-color) 4px solid;
+}
+
+.topic {
+  width: 80vw;
+  max-width: 720px;
+  margin: 1rem auto 1rem;
+
+}
+.topic.fact p {
+  font-weight: 100;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.topic p {
+  margin: 0.75rem 0;
+  line-height: 1.4rem;
+}
+
+.topic h3 {
+  color: var(--blair-red1-color);
+  font-size: 1.2rem;
+}
+
+figcaption {
+  color: gray;
+  font-size: 0.8rem;
+  padding-bottom: 1rem;
+}
+figure.smaller {
+  max-width: 400px;
+  margin: 0.5rem auto;
+}
+figure.bigger {
+  max-width: 600px;
+  margin: 0.5rem auto;
+}
+
+/* MAIN NAV -------- */
+.main-nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-decoration:none;
+  list-style-type: none;
+}
+
+.main-nav a {
+  font-size: 1.25em;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  transition: .2s;
+}
+
+.main-nav a:hover {
+  color: var(--blair-white2-color);
+  background: var(--blair-red2-color);
+}
+
+.main-nav .active {
+  color: var(--blair-white1-color);
+  background: var(--blair-red1-color);
+}
+
+/* ================================= 
+  MEDIA QUERIES
+==================================== */
+
+@media (min-width: 0) and (max-width: 919px) {
+ 
+  header ul {
+    border: none;
+    background-color: var(--blair-white1-color);
+  }
+}
+
+@media (min-width: 920px) {
+ 
+  header ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--blair-white1-color);
+    list-style-type: none;
+  }
+}
